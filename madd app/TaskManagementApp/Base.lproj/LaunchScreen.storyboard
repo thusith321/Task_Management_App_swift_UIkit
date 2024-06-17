@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to My Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXJ-JR-eAm">
+                                <rect key="frame" x="73.333333333333329" y="431" width="246.33333333333337" height="32"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="loginimage" translatesAutoresizingMaskIntoConstraints="NO" id="7Tf-HS-wcz">
+                                <rect key="frame" x="0.0" y="471" width="393" height="381"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="MyTask" translatesAutoresizingMaskIntoConstraints="NO" id="jTl-oN-vc1">
+                                <rect key="frame" x="109" y="238" width="175" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="185" id="pio-cA-Xws"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jTl-oN-vc1" firstAttribute="centerX" secondItem="cXJ-JR-eAm" secondAttribute="centerX" id="Phz-gF-YdO"/>
+                            <constraint firstItem="jTl-oN-vc1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="179" id="QiX-SA-gvY"/>
+                            <constraint firstItem="7Tf-HS-wcz" firstAttribute="top" secondItem="cXJ-JR-eAm" secondAttribute="bottom" constant="8" id="UcY-gG-Lic"/>
+                            <constraint firstItem="7Tf-HS-wcz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UnE-fZ-2DH"/>
+                            <constraint firstItem="jTl-oN-vc1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="109" id="bEa-0B-Nnj"/>
+                            <constraint firstItem="jTl-oN-vc1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bve-fv-e3w"/>
+                            <constraint firstItem="cXJ-JR-eAm" firstAttribute="top" secondItem="jTl-oN-vc1" secondAttribute="bottom" constant="8" id="cNP-7j-aPB"/>
+                            <constraint firstItem="jTl-oN-vc1" firstAttribute="centerX" secondItem="7Tf-HS-wcz" secondAttribute="centerX" id="gtV-5D-lyb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="7Tf-HS-wcz" secondAttribute="bottom" constant="-34" id="v1f-89-Ule"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MyTask" width="501" height="498"/>
+        <image name="loginimage" width="1280" height="921"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
